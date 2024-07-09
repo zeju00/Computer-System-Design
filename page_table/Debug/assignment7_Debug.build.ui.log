@@ -1,0 +1,25 @@
+2024-06-11T23:44:53.143902300255-23:44:53 **** Incremental Build of configuration Debug for project assignment7 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/csd_translation_table.s'
+000-'Invoking: ARM v7 gcc assembler'
+000-arm-none-eabi-gcc -c  -o"src/csd_translation_table.o" "../src/csd_translation_table.s"
+000-'Finished building: ../src/csd_translation_table.s'
+000-' '
+000-'Building target: assignment7.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/zeju0/Desktop/class_experiments_v21/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bsplib/lib -o "assignment7.elf"  ./src/csd_asm.o ./src/csd_translation_table.o ./src/initial.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: assignment7.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size assignment7.elf  |tee "assignment7.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  21292	   1144	  29740	  52176	   cbd0	assignment7.elf
+000-'Finished building: assignment7.elf.size'
+000-' '
+00255-
+23:45:06 Build Finished (took 13s.785ms)
+
