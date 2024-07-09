@@ -1,11 +1,3 @@
-// ------------------------------------------
-//  Author: Prof. Taeweon Suh
-//          Computer Science & Engineering
-//          College of Informatics, Korea Univ.
-//  Date:   June 01, 2022
-//
-//  It is based on Boot code in Xilinx SDK
-// ------------------------------------------
 
 .globl  csd_MMUTable
 .section .csd_mmu_tbl,"a"
