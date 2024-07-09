@@ -1,10 +1,3 @@
-/*
- * csd_zynq_peripherals.h
- *
- *  Created on: 2014. 8. 23.
- *      Author: Soojung
- */
-
 #ifndef CSD_ZYNQ_PERIPHERALS_H_
 #define CSD_ZYNQ_PERIPHERALS_H_
 
