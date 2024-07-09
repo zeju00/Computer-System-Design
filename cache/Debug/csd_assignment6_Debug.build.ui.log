@@ -1,0 +1,25 @@
+2024-05-29T18:08:39.65622100255-18:08:39 **** Incremental Build of configuration Debug for project csd_assignment6 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/csd_asm.S'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/csd_asm.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/zeju0/Desktop/class_experiments_v21/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/csd_asm.d" -MT"src/csd_asm.o" -o "src/csd_asm.o" "../src/csd_asm.S"
+000-'Finished building: ../src/csd_asm.S'
+000-' '
+000-'Building target: csd_assignment6.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/zeju0/Desktop/class_experiments_v21/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bsplib/lib -o "csd_assignment6.elf"  ./src/csd_asm.o ./src/csd_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: csd_assignment6.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size csd_assignment6.elf  |tee "csd_assignment6.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  19064	   1144	  22568	  42776	   a718	csd_assignment6.elf
+000-'Finished building: csd_assignment6.elf.size'
+000-' '
+00255-
+18:08:42 Build Finished (took 3s.33ms)
+
