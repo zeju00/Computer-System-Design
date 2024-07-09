@@ -1,0 +1,25 @@
+2024-06-09T01:04:05.206853300255-01:04:05 **** Incremental Build of configuration Debug for project minos ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/csd_asm.S'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/csd_asm.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/zeju0/Desktop/class_experiments_v21/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/csd_asm.d" -MT"src/csd_asm.o" -o "src/csd_asm.o" "../src/csd_asm.S"
+000-'Finished building: ../src/csd_asm.S'
+000-' '
+000-'Building target: minos.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/zeju0/Desktop/class_experiments_v21/csd_platform/export/csd_platform/sw/csd_platform/standalone_domain/bsplib/lib -o "minos.elf"  ./src/csd_asm.o ./src/platform.o ./src/task1_c.o ./src/task2_c.o ./src/task3_c.o ./src/uart_init.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: minos.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size minos.elf  |tee "minos.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  55317	   8916	  33264	  97497	  17cd9	minos.elf
+000-'Finished building: minos.elf.size'
+000-' '
+00255-
+01:04:11 Build Finished (took 5s.860ms)
+
